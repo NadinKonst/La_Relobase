@@ -1,0 +1,1294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15rem;
+}
+
+@font-face {
+  font-family: "Mediator Web";
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
+}
+.header {
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  height: auto;
+}
+.header .header_burger {
+  display: none;
+}
+.header .header_burger .burger {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header .header_burger {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.header-row {
+  background-color: #f4b647;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+@media (max-width: 768px) {
+  .header-row {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .header-row {
+    height: auto;
+  }
+}
+.header-row .header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.header-row .header-menu .header-menu__link {
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  font-weight: bolder;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1.2rem;
+}
+.header-row .header-menu .header-menu__link:first-child {
+  margin-left: 0;
+}
+.header-row .header-menu .header-menu__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header-row .header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+}
+.header-row .logo__img,
+.header-row .telegram__img,
+.header-row .whatsapp__img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main {
+  padding-top: 10vh;
+}
+@media (max-width: 768px) {
+  .main {
+    padding-top: 0;
+  }
+}
+
+.first-block {
+  row-gap: 5%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), transparent 70%), url(/Assets/image/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .first-block {
+    width: 100%;
+  }
+}
+.first-block .first-block__text {
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  color: #3c3c3b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 5%;
+}
+@media (max-width: 768px) {
+  .first-block .first-block__text {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+@media (max-width: 376px) {
+  .first-block .first-block__text {
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+.first-block .first-block__button {
+  margin-left: 10%;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: #b51628;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  line-height: 1.55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.first-block .first-block__button:hover {
+  background: rgb(146, 33, 4);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .first-block .first-block__button {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .first-block .first-block__button {
+    width: 10rem;
+    height: 3rem;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+  }
+}
+
+/*=================================================================About=====================================================================*/
+.wrapper-about-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section {
+    padding: 0;
+  }
+}
+.wrapper-about-section .about-section {
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .about-section {
+    max-width: 50rem;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .about-section {
+    padding: 1rem 0;
+  }
+}
+.wrapper-about-section .about-section .about-section__img {
+  width: 100%;
+  padding-right: 1rem;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .about-section .about-section__img {
+    padding-right: 0;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .about-section .about-section__img {
+    padding-right: 0;
+  }
+}
+.wrapper-about-section .container-about {
+  max-width: 100%;
+  width: 100%;
+  background: #f4b647;
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  .wrapper-about-section .container-about {
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about {
+    padding: 3rem 1rem;
+    background: none;
+  }
+}
+.wrapper-about-section .container-about .about-title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .container-about .about-title {
+    margin-bottom: 2rem;
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about .about-title {
+    margin-bottom: 1.5rem;
+    color: #160404;
+    font-size: 1.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+.wrapper-about-section .container-about .about-text {
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .container-about .about-text {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about .about-text {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+}
+.wrapper-about-section .container-about .about-title__small {
+  color: #160404;
+  font-size: 1.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .container-about .about-title__small {
+    color: #160404;
+    font-size: 1.3rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about .about-title__small {
+    margin-bottom: 1.5rem;
+  }
+}
+.wrapper-about-section .container-about .about-section__list {
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  line-height: 170%;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .container-about .about-section__list {
+    color: #160404;
+    font-size: 1.2rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    line-height: 130%;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about .about-section__list {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+}
+
+/*=================================================================Applicants=====================================================================*/
+.container-applicants {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container-applicants {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .container-applicants {
+    max-width: 376px;
+    width: 100%;
+  }
+}
+.container-applicants .applicants_title {
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+  margin: 3rem;
+}
+@media (max-width: 768px) {
+  .container-applicants .applicants_title {
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 800;
+    margin: 2.5rem;
+  }
+}
+@media (max-width: 376px) {
+  .container-applicants .applicants_title {
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin: 2rem;
+  }
+}
+.container-applicants .wrapper-applicants {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+@media (max-width: 376px) {
+  .container-applicants .wrapper-applicants {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container-applicants .wrapper-applicants .block {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+@media (max-width: 376px) {
+  .container-applicants .wrapper-applicants .block {
+    max-width: 80%;
+    width: 100%;
+  }
+}
+.container-applicants .wrapper-applicants .block .content {
+  width: 100%;
+}
+.container-applicants .wrapper-applicants .block .content .applicants_img {
+  width: 20rem;
+  margin-bottom: -0.2rem;
+}
+@media (max-width: 768px) {
+  .container-applicants .wrapper-applicants .block .content .applicants_img {
+    width: 15rem;
+  }
+}
+@media (max-width: 376px) {
+  .container-applicants .wrapper-applicants .block .content .applicants_img {
+    width: 13rem;
+  }
+}
+.container-applicants .wrapper-applicants .block .content .applicants_text {
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  background-color: rgb(249, 246, 246);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  text-align: left;
+  padding: 1rem;
+  word-wrap: break-word;
+}
+@media (max-width: 768px) {
+  .container-applicants .wrapper-applicants .block .content .applicants_text {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+@media (max-width: 376px) {
+  .container-applicants .wrapper-applicants .block .content .applicants_text {
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  background-color: #f4b647;
+  width: 60vw;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .info {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    margin-top: -0.8rem;
+  }
+}
+@media (max-width: 376px) {
+  .info {
+    width: 90%;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    background-color: rgba(244, 181, 71, 0.5254901961);
+  }
+}
+
+/*=================================================================Benefits=====================================================================*/
+.container-benefits {
+  width: 100%;
+  background-color: rgba(244, 181, 71, 0.137254902);
+  margin-top: 6.5rem;
+}
+.container-benefits .container-benefits_title {
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+  padding-top: 5rem;
+  margin: 3rem;
+}
+@media (max-width: 768px) {
+  .container-benefits .container-benefits_title {
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    padding-top: 3rem;
+    margin: 2.5rem;
+  }
+}
+@media (max-width: 376px) {
+  .container-benefits .container-benefits_title {
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin: 2rem;
+  }
+}
+.container-benefits .benefits {
+  max-width: 50rem;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container-benefits .benefits {
+    padding: 3.5rem;
+  }
+}
+.container-benefits .benefits .benefits_list {
+  border-top: 2px dashed;
+  border-color: #b51628 !important;
+  margin: 0;
+  padding: 2rem;
+  counter-increment: section;
+  position: relative;
+  color: #160404;
+  font-size: 1.5rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+.container-benefits .benefits .benefits_list:nth-child(even):before {
+  content: counter(section);
+  right: 100%;
+  margin-right: -1.25rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.9rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: #b51628;
+  text-align: center;
+  color: white;
+}
+.container-benefits .benefits .benefits_list:nth-child(odd):before {
+  content: counter(section);
+  left: 100%;
+  margin-left: -1.25rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.9rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: #b51628;
+  text-align: center;
+  color: white;
+}
+.container-benefits .benefits .benefits_list:nth-child(even) {
+  border-left: 0.2rem dashed;
+  border-top-left-radius: 1.8rem;
+  border-bottom-left-radius: 1.8rem;
+  margin-right: 1.8rem;
+  padding-right: 0;
+}
+.container-benefits .benefits .benefits_list:nth-child(odd) {
+  border-right: 0.2rem dashed;
+  border-top-right-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  margin-left: 1.8rem;
+  padding-left: 0;
+}
+.container-benefits .benefits .benefits_list:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.container-benefits .benefits .benefits_list:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*=================================================================Requirements=====================================================================*/
+.requirements {
+  width: 100%;
+  padding: 3rem;
+  background-color: rgba(244, 181, 71, 0.137254902);
+}
+@media (max-width: 768px) {
+  .requirements {
+    padding-top: 0;
+  }
+}
+.requirements .requirements__title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .requirements .requirements__title {
+    margin-bottom: 2rem;
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 800;
+  }
+}
+@media (max-width: 376px) {
+  .requirements .requirements__title {
+    margin-bottom: 1.5rem;
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+.requirements .requirements__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 2rem;
+}
+.requirements .requirements__text {
+  color: #160404;
+  font-size: 1.5rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+@media (max-width: 376px) {
+  .requirements .requirements__text {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+.requirements .card-img-top {
+  width: 30%;
+  height: 30%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.requirements .card-text {
+  color: #160404;
+  font-size: 1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+
+/*=================================================================Registrations=====================================================================*/
+.registration {
+  width: 100%;
+  padding: 0 3rem 2rem 3rem;
+  background-color: rgba(244, 181, 71, 0.137254902);
+}
+.registration .registration__title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .registration .registration__title {
+    margin-bottom: 2rem;
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 800;
+  }
+}
+@media (max-width: 376px) {
+  .registration .registration__title {
+    margin-bottom: 1.5rem;
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+.registration .registration__info {
+  margin: 0 1rem 1rem 0;
+  color: #160404;
+  font-size: 1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+.registration .registration__tilesWrap {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.registration .li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  min-width: 250px;
+  padding: 1rem 0 0 1rem;
+  position: relative;
+  height: 25vh;
+  background: white;
+  border: 1px solid #252727;
+  margin: 0 1rem 2rem 0;
+}
+.registration .li:last-child {
+  margin-bottom: 0;
+}
+.registration .numbers {
+  font-size: 114px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.08;
+  top: 50px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.registration .li:hover h2 {
+  top: 0px;
+  opacity: 0.6;
+}
+.registration .li:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+}
+.registration .li:nth-child(1):before {
+  background: #C9FFBF;
+  background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+.registration .li:nth-child(2):before {
+  background: #f2709c;
+  background: linear-gradient(to right, #ff9472, #f2709c);
+}
+.registration .li:nth-child(3):before {
+  background: #c21500;
+  background: linear-gradient(to right, #ffc500, #c21500);
+}
+.registration .li:nth-child(4):before {
+  background: #FC354C;
+  background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+
+/*=================================================================Products=====================================================================*/
+@media (max-width: 768px) {
+  .container-products {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .container-products {
+    max-width: 376px;
+    width: 100%;
+  }
+}
+
+.container-products__title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .container-products__title {
+    margin-bottom: 2rem;
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+@media (max-width: 376px) {
+  .container-products__title {
+    margin-bottom: 1.5rem;
+    color: #160404;
+    font-size: 1.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+
+.products-block__free {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  max-width: 100%;
+  padding: 10px 10px 35px 10px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: antiquewhite;
+  margin-top: 1em;
+}
+.products-block__free .products-block__guarantee {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  background-color: #0ABFBC;
+  max-width: 80%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  animation: identifier 2s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__guarantee {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__guarantee {
+    width: 90%;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+@keyframes identifier {
+  0% {
+    background-color: #0ABFBC;
+  }
+  50% {
+    background-color: #769393;
+  }
+  100% {
+    background-color: #0ABFBC;
+  }
+}
+.products-block__free .products-block__img_free {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__img_free {
+    display: none;
+  }
+}
+.products-block__free .products-block__img_free .image {
+  max-width: 200px;
+  max-height: 200px;
+}
+.products-block__free .products-block__product-name_free {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  min-height: 50px;
+  max-width: 50rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #160404;
+  font-size: 1.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__product-name_free {
+    color: #160404;
+    font-size: 1.3rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__product-name_free {
+    margin-bottom: 1.5rem;
+  }
+}
+.products-block__free .products-block__list_free {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  list-style-type: none;
+  margin-top: 0;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__list_free {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__list_free {
+    margin-bottom: 1.5rem;
+  }
+}
+.products-block__free .products-block__list_free span {
+  color: #b51628;
+}
+.products-block__free .products-block__list_free li {
+  margin-bottom: 1.5rem;
+}
+.products-block__free .products-block__btn_free {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.products-block__free .products-block__order_free {
+  margin-right: 10%;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: #b51628;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  line-height: 1.55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products-block__free .products-block__order_free:hover {
+  background: rgb(146, 33, 4);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__order_free {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__order_free {
+    width: 10rem;
+    height: 3rem;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+  }
+}
+.products-block__free .products-block__order_free:hover {
+  background: #f4b647;
+}
+
+.products-block {
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 100%;
+  padding: 10px 10px 35px 10px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: antiquewhite;
+  margin-top: 1em;
+}
+.products-block .products-block__img {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .products-block .products-block__img {
+    display: none;
+  }
+}
+.products-block .products-block__img .image {
+  max-width: 200px;
+  max-height: 200px;
+}
+.products-block .products-block__img {
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+.products-block .products-block__img .image {
+  max-width: 200px;
+  max-height: 200px;
+}
+.products-block .products-block__product-name {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  min-height: 50px;
+  display: flex;
+  max-width: 50rem;
+  justify-content: start;
+  align-items: center;
+  color: #160404;
+  font-size: 1.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .products-block .products-block__product-name {
+    color: #160404;
+    font-size: 1.3rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block .products-block__product-name {
+    margin-bottom: 1.5rem;
+  }
+}
+.products-block .products-block__modal {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  max-height: 80%;
+  max-width: 80%;
+}
+.products-block .products-block__cost {
+  min-height: 50px;
+  max-width: 80%;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  border-radius: 10px 10px 10px 10px;
+  background: #f4b647;
+  color: #fff;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+}
+.products-block .products-block__btn {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.products-block .products-block__order {
+  margin-right: 10%;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: #b51628;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  line-height: 1.55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products-block .products-block__order:hover {
+  background: rgb(146, 33, 4);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .products-block .products-block__order {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block .products-block__order {
+    width: 10rem;
+    height: 3rem;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+  }
+}
+.products-block .products-block__order:hover {
+  background: #f4b647;
+}
+
+/*=================================================================Feedback=====================================================================*/
+.feedback_title {
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  margin: 50px;
+  line-height: 54px;
+}
+@media (max-width: 768px) {
+  .feedback_title {
+    font-size: 2.9rem;
+  }
+}
+.feedback_items {
+  display: grid;
+  grid-template: repeat(3, minmax(200px, auto))/1fr 1fr;
+  row-gap: 50px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .feedback_items {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+.feedback_item {
+  background: rgb(249, 246, 246);
+  padding: 35px;
+  border-radius: 10px;
+  text-align: left;
+  color: #160404;
+  font-size: 16px;
+  font-family: "Mediator Web";
+  font-weight: 300;
+  color: #160404;
+  line-height: 120%;
+}
+@media (max-width: 768px) {
+  .feedback_item {
+    font-size: 19px;
+  }
+}
+.feedback .container_item::after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  margin-left: 35px;
+  border-color: rgb(249, 246, 246);
+  border-top-color: rgb(249, 246, 246);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: rgb(249, 246, 246);
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: #f4b647;
+  width: 100%;
+}
+.footer_container {
+  min-height: 150px;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .footer_container {
+    justify-content: space-around;
+  }
+}
+.footer_column-four > *:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+@media (max-width: 400px) {
+  .footer_column-four {
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+  }
+}
+.footer_column-four-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer_column-four-link .footer_column-four-img {
+  width: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column > *:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.column_text-main {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.column_link {
+  color: #160404;
+  font-size: 14px;
+  font-family: "Mediator Web";
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .column_link {
+    font-size: 16px;
+  }
+}
+.column_link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
