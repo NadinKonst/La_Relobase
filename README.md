@@ -8,8 +8,7 @@
 
 The purpose of the project was to create a landing Page for the customer providing immigration services.
 The work was carried out without the participation of designers or the use of a website layout. Includes two adaptive versions.
-
-
+***
 ***
 ### Technologies:
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -17,9 +16,9 @@ The work was carried out without the participation of designers or the use of a 
 * ![BOOTSTRAP5](https://img.shields.io/badge/BOOTSTRAP5-blue?logo=bootstrap&logoColor=white)
 * ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 * ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-
- 
-### Thanks to all Contributors:
+***
+***
+ ### Thanks to all Contributors:
  <h3>
   <a href="https://github.com/FayaAkh">
     <img alt="Faya" src="https://img.shields.io/badge/-Faya-black?style=for-the-badge&logo=github&logoColor=white" />
@@ -45,3 +44,4 @@ The work was carried out without the participation of designers or the use of a 
     <img alt="easdln" src="https://img.shields.io/badge/-easdln-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
+***
