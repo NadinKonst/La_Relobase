@@ -1,6 +1,5 @@
 ***
 ## Immigration service landing
-<img src="./Assets/image/example1.png" alt="Example" width="725" height="418">
 
 ![2024-05-30_21-04-22](https://github.com/NadinKonst/La_Relobase/assets/148748559/c3531432-04fe-426e-91f5-744893aa706d)
 
