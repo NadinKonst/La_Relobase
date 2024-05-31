@@ -2,6 +2,11 @@
 ## Immigration service landing
 <img src="./Assets/image/example1.png" alt="Example" width="725" height="418">
 
+![2024-05-30_21-04-22](https://github.com/NadinKonst/La_Relobase/assets/148748559/c3531432-04fe-426e-91f5-744893aa706d)
+
+![2024-05-30_21-05-21](https://github.com/NadinKonst/La_Relobase/assets/148748559/950f50ea-cccb-44c2-b44f-477f17e2e8f2)
+
+
 The purpose of the project was to create a landing Page for the customer providing immigration services.
 The work was carried out without the participation of designers or the use of a website layout. Includes two adaptive versions.
 
