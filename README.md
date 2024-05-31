@@ -1,5 +1,5 @@
 ***
-## Immigration_service_landing
+## Immigration service landing
 <img src="./Assets/image/example1.png" alt="Example" width="725" height="418">
 
 The purpose of the project was to create a landing Page for the customer providing immigration services.
